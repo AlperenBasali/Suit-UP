@@ -1,0 +1,1328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 18px/1.1em Roboto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 105%;
+    
+}
+body{
+    background-color: rgb(249,250,252);
+
+}
+
+/* topbtn */
+#button {
+    display: inline-block;
+    background-color: #6fcfb8;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  #button i{
+      
+    color: white;
+  }
+  #button::after {
+    
+    
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    opacity: 1 !important;
+    
+  }
+  #button:active {
+    opacity: 1 ;
+      }
+  #button.show {
+    opacity: .5;
+    visibility: visible;
+  }
+/* topbtn */
+.container{
+    --bs-gutter-x: 0;
+}
+nav{
+    position: static;
+    top: 0;
+    z-index: 100;
+    left: 0;
+}
+.hidden{ display: none;}
+
+.navUp{
+    background: url(https://theme644-clothes-free.myshopify.com/cdn/shop/t/2/assets/suitup_top_banner.png?v=11381325228835922861553076005) ;
+    height: 100%;
+    padding: 15px;
+    display: grid;
+    max-width: 100%;
+    
+}
+.navUp .row{
+    color: white;
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    
+}
+
+.navUp p{
+    margin-bottom:0;
+    
+}
+.navUp b{
+    font-weight: 700;
+    
+}
+.navUp h3{
+    font-size: 93%;
+    
+    margin: auto;
+    font-weight: 300;
+
+}
+.navUp button,button:last-child{
+    font-size: 60%;
+    font-weight: 600;
+    border: none;
+    padding: 11px 20px;
+    background-color: #FFF;
+    transition: .3s ease;
+}
+.navUp button:hover,button:last-child:hover{
+    background-color: black;
+    color: #FFF;
+    transition: .3s ease;
+}
+.navUp .row .col-4,
+.navUp .row .col-5,
+.navUp .row .col-3 {
+    align-items: center;
+   
+}
+/* ######################################## */
+#searchBlock{
+    color: rgb(189,189,189);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    
+}
+#searchBlock span,.navSearchToggle b{
+    font-weight: 700;
+}
+
+#USD{
+    background-color: rgb(249,250,252);
+    border: none;
+    cursor: pointer;
+    color: rgb(189,189,189);
+    font-weight: 700;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.arrow:hover{
+    border-color:#6fcfb8 transparent transparent transparent ;
+}
+
+.arrow-container {
+    position: relative;
+    display: inline-block;
+}
+.arrow {
+    position: absolute;
+    top: 45%;
+    right: -15px; 
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: rgb(189,202,221) transparent transparent transparent;
+    transition: transform 0.3s ease; 
+  
+}
+
+.arrow.flipped {
+    transform: translateY(-50%) rotate(180deg);
+}
+.orderOnline{
+    margin-top: 10px;
+}
+
+.navSearchToggle span,.toggle2{
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition:color .3s;
+}
+.navSearchToggle span:hover,.navSearchToggle span a:hover{
+    color: #6fcfb8;
+    transition: .3s;
+}
+.navSearchToggle span a{
+    color: rgb(189,189,189);
+    text-decoration: none;
+}
+.formInput{
+    width: 300px;
+    height: 40px;
+    padding-right: 34px;
+    border-color:#f0f0f0 ;
+    border: 1px solid #f0f0f0;
+    color: #bdbdbd;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+.formInput:focus{
+    border: 1px solid #999999;
+    outline: none;
+    border-radius: 0%;
+}
+.navSearchToggle form{
+    position: relative;
+}
+.navSearchToggle form .navInputSearch{
+    border: none;
+    background-color: #FFF;
+    
+}
+.navSearchToggle form .navInputSearch i{
+    color: black;
+    font-weight: 900;
+    font-size: 150%;
+    position: absolute;
+    top: 20%;
+    right: 30px;
+}
+.biSearchX{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(249,250,252);
+}
+
+/* ************************************************************************* */
+.headerLinks1{
+    font-size: 18px;
+    color: #6fcfb8;
+    font-weight: 700;
+}
+.headerLinks{
+    font-size: 18px;
+    color: #999999;
+    font-weight: 700;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #6fcfb8;
+}
+
+.navDropdownMenus{
+    border-radius: 0%;
+    padding: 1rem .5rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px .5px 5px; background-color: rgb(249,250,252);
+    background-color: #FFF;
+    position: absolute;
+    top: 40px;
+   
+}
+.navDropdownMenus li a{
+    color: #bdbdbd;
+    font-size: 80%;
+}
+.navDropdownMenus li a:hover{
+    color: #6fcfb8;
+}
+
+.navSale{
+    border-radius: 0%;
+    padding: 1rem .5rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px .5px 5px; background-color: rgb(249,250,252);
+    background-color: #FFF;
+    width: 25%;
+    
+}
+
+.showSale{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    justify-content: space-around;
+}
+.navDropdownMenus li{
+    justify-content: center;
+    display: flex;
+}
+
+.dropdownProduct{
+    margin: auto;   
+    position: absolute;
+    bottom: 35px;
+    text-align: center;
+    background-color: white;
+    padding: 1rem .5rem 0 .5rem;
+    
+}
+.ddP1{
+    font-size: 80%;   
+}
+.ddP2{
+    font-size: 70%;
+    margin-left: auto;
+}
+.ddP1:hover{
+    color: #6fcfb8;
+    cursor: pointer;
+}
+
+
+.navCart{
+    overflow-y: scroll;
+    max-height: 80vh;
+}
+
+.hamburger{
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    border-radius: 20%;
+}
+
+.navbar-toggler{
+    border: none;
+    outline: none;
+}
+.navbar-toggler:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar{
+    --bs-navbar-padding-y: 0;
+    --bs-navbar-toggler-padding-y: 0;
+}
+
+#offcanvasLeftClose{
+    visibility: hidden;
+}
+
+
+.accordion-button{
+    font-size: 100%;
+}
+.accordion-button::after {
+    content: ' \F659'; /* Bootstrap Icons'daki bir ikonun unicode değerini buraya ekleyin */
+    font-family: 'bootstrap-icons'; /* Font ailesi */
+    font-weight: 900; /* Font ağırlığı */
+    margin-left: auto; /* İkona boşluk eklemek için */
+    background-image: none;
+    transform: rotate(-45deg);
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: none;
+    content: '\F2EA';
+    font-family: 'bootstrap-icons';
+    transform: rotate(180deg);
+    margin-left: auto;
+    margin-top: auto;
+    font-weight: 900;
+}
+
+.accordion{
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-icon-transform: rotate(-45deg);
+    --bs-accordion-btn-icon-width: ;
+}
+
+.accordion-item{
+    border: 1px solid black;
+}
+
+
+.accordion-body-1,.accordion-body-2{
+    margin-bottom: 10px;
+}
+
+
+/* NAV DONE */
+.carousel-inner{
+    background-color: green;
+    
+}
+.carousel-item{
+    background-image: url( //theme644-clothes-free.myshopify.com/cdn/shop/files/01_1170x577_crop_center.jpg?v=1614290116 );
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 66.323% 0 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.carousel-indicators{
+    left: auto;
+}
+.carousel-indicators button{
+    border-radius: 50%;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: grey !important;
+   
+}
+.carousel-indicators button:hover{
+    background-color: #6fcfb8 !important;
+}
+
+.carousel-control-next,.carousel-control-prev{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+}
+
+
+
+.bi-arrow-right-short:hover,.bi-arrow-left-short:hover{
+    color: #6fcfb8 !important;
+}
+
+
+/* carousel içerik */
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20%;
+    left: 0;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 2rem;
+    color: black;
+    text-align: center;
+    width: 50%;
+}
+.carousel-caption h5{
+    font-size: 300%;
+    font-weight: 300;
+}
+.carousel-caption p{
+    color: #6fcfb8;
+    font-weight: 600;
+    padding-bottom: .5rem;
+}
+.carousel-caption button{
+    background-color: #6fcfb8;
+    color: white;
+    font-weight: 500;
+    padding: .6em 1em;
+}
+
+
+.carouselDivSecond{
+    
+    background-color: red;
+    width: 80%;
+    height: 345px;
+   
+    position: relative;
+
+}
+  .carouselDivSecondImg{
+    background-image: url(https://theme644-clothes-free.myshopify.com/cdn/shop/files/030_270x330_crop_top.png?v=1614290116);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .carouselDivSecondContent{
+    width: 90%;
+    /* height: 20%; */
+    background-color: white;
+    padding: .6rem 1rem;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    right: 0;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .carouselDivSecondContent h4,.carouselDivSecondContent h3{
+    font-size: 80%;
+    /* line-height: .1; */
+    margin-bottom: 0;
+  }
+  .carouselDivSecondContent h3{
+    color: #6fcfb8;
+  }
+.carouselDivSecondContent:hover{
+    background-color: #383838;
+    transition: .3s;
+}
+  .carouselDivThird{
+    background-color: #6fcfb8;
+    width: 80%;
+    height: 200px;
+    margin-left: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .carouselDivThirdContent{
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+    width: 70%;
+    text-align: center;
+  }
+  .carouselDivThirdContent:hover{
+    color: black;
+    transition: .3s;
+  }
+
+
+  /* SECTION2 */
+  .categoriesSec .categoriesDiv{
+    background-color: white;
+    padding: 1rem;
+  }
+  .categoriesSec .categoriesDiv ul li{
+    border-bottom: 1px solid rgb(242,242,242);
+    padding: .3rem 0;
+  }
+  .categoriesSec .categoriesDiv p{
+    color: #999999;
+    font-weight: 400;
+    font-size: 70%;
+  }
+  .categoriesSec .categoriesDiv ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 60%;
+    font-weight: 400;
+    transition: .3s;
+  }
+  .categoriesSec .categoriesDiv ul li a:hover{
+    color: #6fcfb8;
+    transition: .3s;
+  }
+
+  .catDivs div{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.catDivs .col-3{
+    cursor: pointer;
+}
+
+.catDivs div span{
+  position: absolute;
+  top: 15px;
+    left: 15px;
+    font-weight: 500;
+    font-size: 85%;
+    width: 30px;
+
+  }
+
+  .firstCat{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/collection01_270x255_crop_center.jpg?v=1614290116);
+    transition: 1s;
+}
+.firstCat:hover{
+      background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/collection02_270x255_crop_center.jpg?v=1614290116);
+      transition: 1s;
+
+  }
+  .secCat{
+      background-image: url( //theme644-clothes-free.myshopify.com/cdn/shop/files/collection022_270x255_crop_center.png?v=1614290117 );
+      transition: 1s;
+    }
+    .secCat:hover{
+      background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/collection21_270x255_crop_center.jpg?v=1614290117);
+    transition: 1s;
+  }
+  .thirdCat{
+      background-image: url( //theme644-clothes-free.myshopify.com/cdn/shop/files/collection012_270x255_crop_center.jpg?v=1614290117 );
+      transition: 1s;
+    }
+    .thirdCat:hover{
+      background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/collection22_270x255_crop_center.jpg?v=1614290117);
+    transition: 1s;
+  }
+  .forthCat{
+      background-image: url( //theme644-clothes-free.myshopify.com/cdn/shop/files/collection013_-_Copy_270x255_crop_center.jpg?v=1614290117 );
+      transition: 1s;
+    }
+    .forthCat:hover{
+      background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/collection013_270x255_crop_center.jpg?v=1614290117);
+    transition: 1s;
+  }
+  .fifthCat{
+    background-image: url( //theme644-clothes-free.myshopify.com/cdn/shop/files/collection014_270x255_crop_center.jpg?v=1614290117 );
+    transition: 1s;
+  }
+  .fifthCat:hover{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/collection24_270x255_crop_center.jpg?v=1614290117);
+    transition: 1s;
+  }
+  .sixthCat{
+    background-image: url( //theme644-clothes-free.myshopify.com/cdn/shop/files/collection015_270x255_crop_center.jpg?v=1614290117 );
+    transition: 1s;
+  }
+  .sixthCat:hover{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/collection25_270x255_crop_center.jpg?v=1614290117);
+    transition: 1s;
+  }
+
+
+.categoriesAccordionSec2{
+    color: #999999;
+    font-size: 70%;
+    font-weight: 500;
+}
+.accordionSec2 ul li{
+    border-bottom: 1px solid rgb(242,242,242);
+    padding: .3rem 0;
+}
+.accordionSec2 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 70%;
+   
+}
+
+
+
+/* POPULARPRODUCTS */
+.popularProducts p{
+    margin: auto;
+    padding: 2rem;
+    font-weight: 500;
+}
+
+.popularProducts .col-2 div:first-child,.seasonDiv:first-child{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    height: 300px;
+}
+.popularFirst{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/classic_fit_three-piece_check_suit_1_270x341_crop_top.jpg?v=1553073344);
+    transition: 1s;
+    /* position: relative; */
+}
+.popularFirst:hover{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/classic_fit_three-piece_check_suit_2_270x341_crop_top.jpg?v=1553073344);
+    transition: 1s;
+}
+.popularFirst div{
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    
+}
+.popularFirst div span{
+    font-size: 50%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #383838;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.popularFirstInclude a{
+    color: black;
+    text-decoration: none;
+    font-size: 60%;
+    font-weight: 400;
+    transition: .3s;
+}
+.popularFirstInclude div{
+    font-size: 60%;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+}
+.popularFirstInclude div div span:nth-child(1){
+    width: 15px;
+    height: 15px;
+    background-color: rgb(102, 100, 100);
+    border-radius: 50%;
+    border: 1px solid grey;
+    /* margin-left: 3px; */
+    margin-right: 5px;
+}
+.popularFirstInclude div div span:nth-child(2){
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    border: 1px solid grey;
+    /* margin-left: 3px; */
+    margin-right: 5px;
+}
+.popularFirstInclude div div span:nth-child(3){
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid grey;
+    /* margin-left: 3px; */
+    margin-right: 5px;
+}
+
+.popularChooseVariant a{
+    color: black;
+    text-decoration: none;
+    font-size: 60%;
+}
+.popularChooseVariant a span,.popularChooseVariant a i{
+    font-weight: 400;
+}
+.popularChooseVariant div i {
+    color: #999999;
+    transition: .3s;
+}
+
+.popularFirstInclude a:hover,.popularChooseVariant a:hover,.popularChooseVariantR a i:hover{
+    color:#6fcfb8;
+    transition: .3s;
+}
+
+.popularSec{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/crewneck_sicoca_silk_blend_sweater_1_270x341_crop_top.jpg?v=1553073338);
+    transition: 1s;
+    /* position: relative; */
+}
+.popularSec:hover{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/crewneck_sicoca_silk_blend_sweater_2_270x341_crop_top.jpg?v=1553073338);
+    transition: 1s;
+}
+.popularSec div:first-child{
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    
+}
+.popularSec div:last-child{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+}
+.popularSec div:first-child span{
+    font-size: 50%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #383838;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.popularSec div:last-child span{
+    font-size: 50%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #ee5757;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.popularThird{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/illusion_yoke_lace_sheath_dress_1_270x341_crop_top.jpg?v=1553073332);
+    transition: 1s;
+}
+.popularThird:hover{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/illusion_yoke_lace_sheath_dress_2_270x341_crop_top.jpg?v=1553073332);
+    transition: 1s;
+}
+.popularThird div:first-child{
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    
+}
+.popularThird div:last-child{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+}
+.popularThird div:first-child span{
+    font-size: 50%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #383838;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.popularThird div:last-child span{
+    font-size: 50%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #ee5757;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.popularFourth{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/josefina_boyfriend_jeans_bright_light_broken_twill_1_270x341_crop_top.jpg?v=1553073326);
+    transition: 1s;
+}
+.popularFourth:hover{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/josefina_boyfriend_jeans_bright_light_broken_twill_2_270x341_crop_top.jpg?v=1553073326);
+    transition: 1s;
+}
+.popularFourth div:first-child{
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    
+}
+.popularFourth div:last-child{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+}
+.popularFourth div:first-child span{
+    font-size: 50%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #383838;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.popularFourth div:last-child span{
+    font-size: 50%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #ee5757;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+/* SEC4 */
+
+.hardOneImg{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/image01_1170x440.jpg?v=1614290117);
+    background-position: 50% 50%;
+    padding: 37.607% 0 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: relative;
+}
+
+.hardOneButton{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    left: 45%;
+    top: 35%;
+}
+.hardOneButton2{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    left: 57%;
+    top: 42%;
+}
+.hardOneButton3{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    left: 40%;
+    top: 68%;
+}
+
+.hardOneButtonPlus:hover{
+    box-shadow: 0 0 0 5px rgb(111,207,184,0.5);
+    color: #6fcfb8 !important;
+    transition: all 300ms ease-out;
+    
+}
+.hardOneButtonPlus{
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hardOneButtonPlus i{
+    /* font-weight: 300; */
+    font-size: 80%;
+    
+}
+.hardOneButtonInclude{
+    position: absolute;
+    background-color: white;
+    top: 80%;
+    left: 80%;
+    text-decoration: none;
+    color: black;
+    padding: .5rem;
+    
+}
+.hardOneButtonInclude p,.hardOneButtonInclude3 p{
+    margin-top: 10px;
+    font-size: 40%;
+    display: flex;
+    margin-bottom: 5px;
+}
+.hardOneButtonInclude h5,.hardOneButtonInclude3 h5{
+    color: grey;
+    font-size: 40%;
+    margin-bottom: 0;
+}
+
+.hardOneButtonInclude3{
+    bottom: 80%;
+    right: 80%;
+    position: absolute;
+    background-color: white;
+   
+    text-decoration: none;
+    color: black;
+    padding: .5rem;
+}
+
+/* ////////////////////////////////////////////// */
+/* SEASONSECTION */
+.seasonSection{
+    background-color: white;
+
+}
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+     .leftLst,  .rightLst { position:absolute; border-radius:50%;top:0; }
+    .MultiCarousel .leftLst { right:40px;color: grey;}
+    .MultiCarousel .rightLst { right:0;color: grey; }
+    .MultiCarousel .leftLst:focus { color: #6fcfb8;}
+    .MultiCarousel .rightLst:focus { color: #6fcfb8; }
+    .MultiCarousel p:first-child{
+        font-weight: 600;
+    }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#6fcfb8;opacity: .5; }
+
+
+
+        /* FOOTERUP */
+
+    .footerUp .row .col-lg-2{
+        background-color: white;
+        padding: 1rem 1.3rem;
+        /* width: 23%; */
+    }
+    
+    .footerUp .row .footerUp1 h2,.footerUp2 h2{
+        color: #999999;
+        padding:1rem;
+        font-size: 70%;
+        padding: 1rem 1rem 1rem 0;
+    }
+    .footerUp .row .footerUp1 p{
+        font-size: 70%;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: .5rem;
+    }
+    .footerUp .row .footerUp2 ul li{
+        margin-bottom: .5rem;
+    }
+    .footerUp .row .footerUp2 ul li a{
+        color: black;
+        font-size: 50%;
+        font-weight: 400;
+        transition: .3s;
+    }
+    .footerUp .row .footerUp2 ul li a:hover{
+        color: #6fcfb8;
+        transition: .3s;
+    }
+
+    /* poweredby */
+    .poweredBy p{
+        font-size: 70%;
+        font-weight: 400;
+    }
+
+/* footer */
+.footerBackground{
+    background-image: url( //theme644-clothes-free.myshopify.com/cdn/shop/t/2/assets/suitup_footer_banner.png?v=118422418883656491941553075719 );
+    height: 397px;
+    position: relative;
+    background-position: 50% 0;
+}
+.footerContent{
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    width: 57%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+}
+
+  @media screen and (min-width:992px){
+    nav{
+        position: sticky;
+    }
+  }
+
+  @media screen and (max-width:1200px) {
+    .carouselDivSecond,.carouselDivThird{
+        height: 300px;
+    }
+  }
+  @media screen and (max-width:576px) {
+    #carouselSmall{
+        font-size: 50% ;
+        
+    }
+  }
+  @media screen and (max-width:992px){
+    .popularProducts p{
+        margin: auto;
+        padding: 2rem;
+        font-weight: 500;
+    }
+    
+    .popularProducts .col-12 div:first-child{
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 35%;
+        height: 300px;
+        cursor: pointer;
+    }
+    .popularFirst{
+        background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/classic_fit_three-piece_check_suit_1_270x341_crop_top.jpg?v=1553073344);
+        transition: 1s;
+        /* position: relative; */
+    }
+    .popularFirst:hover{
+        background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/classic_fit_three-piece_check_suit_2_270x341_crop_top.jpg?v=1553073344);
+        transition: 1s;
+    }
+    .popularFirst div{
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        
+    }
+    .popularFirst div span{
+        font-size: 50%;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: #383838;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+    .popularFirstInclude a{
+        color: black;
+        text-decoration: none;
+        font-size: 60%;
+        font-weight: 400;
+        transition: .3s;
+    }
+    .popularFirstInclude p{
+        color: grey;
+        text-decoration: none;
+        font-size: 60%;
+        font-weight: 400;
+        transition: .3s;
+        padding: 0;
+        margin-top: 1rem;
+        line-height: 1.5;
+    }
+    .popularFirstInclude div{
+        font-size: 60%;
+        color: red;
+        display: flex;
+        justify-content: space-between;
+    }
+    .popularFirstInclude div div span:nth-child(1){
+        width: 15px;
+        height: 15px;
+        background-color: rgb(102, 100, 100);
+        border-radius: 50%;
+        border: 1px solid grey;
+        /* margin-left: 3px; */
+        margin-right: 5px;
+    }
+    .popularFirstInclude div div span:nth-child(2){
+        width: 15px;
+        height: 15px;
+        background-color: black;
+        border-radius: 50%;
+        border: 1px solid grey;
+        /* margin-left: 3px; */
+        margin-right: 5px;
+    }
+    .popularFirstInclude div div span:nth-child(3){
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        border-radius: 50%;
+        border: 1px solid grey;
+        /* margin-left: 3px; */
+        margin-right: 5px;
+    }
+    
+    .popularChooseVariant a{
+        color: black;
+        text-decoration: none;
+        font-size: 60%;
+    }
+    .popularChooseVariant a span,.popularChooseVariant a i{
+        font-weight: 400;
+    }
+    .popularChooseVariant div i {
+        color: #999999;
+        transition: .3s;
+    }
+    
+    .popularFirstInclude a:hover,.popularChooseVariant a:hover,.popularChooseVariantR a i:hover{
+        color:#6fcfb8;
+        transition: .3s;
+    }
+    
+    .popularSec{
+        background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/crewneck_sicoca_silk_blend_sweater_1_270x341_crop_top.jpg?v=1553073338);
+        transition: 1s;
+        /* position: relative; */
+    }
+    .popularSec:hover{
+        background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/crewneck_sicoca_silk_blend_sweater_2_270x341_crop_top.jpg?v=1553073338);
+        transition: 1s;
+    }
+    .popularSec div:first-child{
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        
+    }
+    .popularSec div:last-child{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        
+    }
+    .popularSec div:first-child span{
+        font-size: 50%;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: #383838;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+    .popularSec div:last-child span{
+        font-size: 50%;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: #ee5757;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .popularThird{
+        background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/illusion_yoke_lace_sheath_dress_1_270x341_crop_top.jpg?v=1553073332);
+        transition: 1s;
+    }
+    .popularThird:hover{
+        background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/illusion_yoke_lace_sheath_dress_2_270x341_crop_top.jpg?v=1553073332);
+        transition: 1s;
+    }
+    .popularThird div:first-child{
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        
+    }
+    .popularThird div:last-child{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        
+    }
+    .popularThird div:first-child span{
+        font-size: 50%;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: #383838;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+    .popularThird div:last-child span{
+        font-size: 50%;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: #ee5757;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .popularFourth{
+        background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/josefina_boyfriend_jeans_bright_light_broken_twill_1_270x341_crop_top.jpg?v=1553073326);
+        transition: 1s;
+    }
+    .popularFourth:hover{
+        background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/josefina_boyfriend_jeans_bright_light_broken_twill_2_270x341_crop_top.jpg?v=1553073326);
+        transition: 1s;
+    }
+    .popularFourth div:first-child{
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        
+    }
+    .popularFourth div:last-child{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        
+    }
+    .popularFourth div:first-child span{
+        font-size: 50%;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: #383838;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+    .popularFourth div:last-child span{
+        font-size: 50%;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: #ee5757;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+    
+  }
+  @media screen and (max-width:576px) {
+    .popularProducts .col-12 div:first-child{
+       
+        width:inherit;
+       
+    }
+  }
+
+
+  
