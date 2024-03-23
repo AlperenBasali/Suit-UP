@@ -30,7 +30,24 @@ $cards = [
     
     ],
 
-]
+];
+$seasonCards = [
+    [
+        "id" => 5,
+        "image" => "//theme644-clothes-free.myshopify.com/cdn/shop/products/bing_trim_fit_cotton_jersey_polo_1_270x341_crop_top.jpg?v=1553073349",
+        "image_hover" =>"//theme644-clothes-free.myshopify.com/cdn/shop/products/bing_trim_fit_cotton_jersey_polo_2_270x341_crop_top.jpg?v=1553073349",
+        "title" =>"Bing' Trim Fit Cotton Jersey Polo",
+        "price" =>"$285.00 - $285.00",
+        "sale" => "<div><span>sale</span></div>",
+        "color" => ""
+    ],
+    ["id" => 1,
+    "image" => "//theme644-clothes-free.myshopify.com/cdn/shop/products/classic_fit_three-piece_check_suit_1_270x341_crop_top.jpg?v=1553073344",
+    "image_hover" =>"//theme644-clothes-free.myshopify.com/cdn/shop/products/classic_fit_three-piece_check_suit_2_270x341_crop_top.jpg?v=1553073344",
+    "title" =>"Classic Fit Three-Piece Check Suit",
+    "price" =>"$140.00",
+    ],
+];
 
 
 

@@ -1,23 +1,10 @@
 
-
-
 <?php 
-
-
   $query = "SELECT * from cards";
   $result = mysqli_query($baglanti, $query);
-
   $cards = mysqli_fetch_all($result, MYSQLI_ASSOC);
-  mysqli_close($baglanti);
   
-
-
-
-
-
 ?>
-
-
 
 
 <style>
@@ -56,8 +43,6 @@
     transition: 1s;
 }
 </style>
-
-
 
 
 <section class="popularProducts mt-5">
@@ -276,7 +261,7 @@
           <a class="" href=""><?php echo $cards[3]['title'] ?></a>
           <p class="d-none d-sm-block ">And that is why we are offering you the result of great market and technological research - our m...</p>
           <div class="d-block mt-2">
-            <span><del style="color: grey;"><?php echo $cards[3]["oldPrice"] ?></del><?php echo $cards[3]["price"] ?></span>
+            <span><del style="color: grey;"></del><?php echo $cards[3]["price"] ?></span>
           </div>
         </div>
         <div class="popularChooseVariant text-start d-flex justify-content-between mt-2 align-items-center   ">

@@ -13,6 +13,6 @@
 
 
 <!-- popular product kartlarını mysql den getirt. //?DONE -->
-<!-- season sale kısmıda aynı şekilde -->
+<!-- season sale kısmıda aynı şekilde //?DONE -->
 <!-- bir ürüne bastığında gideceğin sayfayı oluştur o ürünün özel sayfası -->
 <!-- ürünleri karta ekleme olayını yap -->

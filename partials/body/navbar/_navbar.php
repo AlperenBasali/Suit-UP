@@ -32,7 +32,7 @@
                             </span>
                             <span>
                                 <i class="bi bi-heart-fill"></i>
-                                <a href=""><b>WISHLIST</b></a>
+                                <a href="product.php"><b>WISHLIST</b></a>
                             </span>
                             <span>
                                 <div class="arrow-container">
