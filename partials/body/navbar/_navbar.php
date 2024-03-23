@@ -1,5 +1,5 @@
 <nav>
-    <div class="container" style="max-width: 100%;">
+    <div class="container" style="max-width: 100%; height:min-content">
         <div class="navUp">
             <div class="row">
                 <div class="col-12 col-md-4">

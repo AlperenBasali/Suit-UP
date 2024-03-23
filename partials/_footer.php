@@ -3,7 +3,7 @@
     <div class="footerContent">
       <h2><b>Upgrade</b> to a Fully-fledged <b>SuitUP!</b></h2>
       <p>Featuring a additional pages, plugins, beautiful pictures and fully functionality!</p>
-      <button type="button" class="btn btn-light px-5 ">VIEW NOW!</button>
+      <button type="button" class="btn btn-light px-5 lastBtn ">VIEW NOW!</button>
     </div>
   </div>
 </footer>

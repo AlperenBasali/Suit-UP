@@ -105,7 +105,7 @@ nav{
     font-weight: 300;
 
 }
-.navUp button,button:last-child{
+.navUp button{
     font-size: 60%;
     font-weight: 600;
     border: none;
@@ -113,7 +113,7 @@ nav{
     background-color: #FFF;
     transition: .3s ease;
 }
-.navUp button:hover,button:last-child:hover{
+.navUp button:hover{
     background-color: black;
     color: #FFF;
     transition: .3s ease;
@@ -419,6 +419,7 @@ nav{
 
 .bi-arrow-right-short:hover,.bi-arrow-left-short:hover{
     color: #6fcfb8 !important;
+    background: none;
 }
 
 
@@ -649,15 +650,7 @@ nav{
     cursor: pointer;
     height: 300px;
 }
-.popularFirst{
-    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/classic_fit_three-piece_check_suit_1_270x341_crop_top.jpg?v=1553073344);
-    transition: 1s;
-    /* position: relative; */
-}
-.popularFirst:hover{
-    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/classic_fit_three-piece_check_suit_2_270x341_crop_top.jpg?v=1553073344);
-    transition: 1s;
-}
+
 .popularFirst div{
     display: block;
     position: absolute;
@@ -735,15 +728,7 @@ nav{
     transition: .3s;
 }
 
-.popularSec{
-    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/crewneck_sicoca_silk_blend_sweater_1_270x341_crop_top.jpg?v=1553073338);
-    transition: 1s;
-    /* position: relative; */
-}
-.popularSec:hover{
-    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/crewneck_sicoca_silk_blend_sweater_2_270x341_crop_top.jpg?v=1553073338);
-    transition: 1s;
-}
+
 .popularSec div:first-child{
     display: block;
     position: absolute;
@@ -781,14 +766,7 @@ nav{
     width: 50px;
 }
 
-.popularThird{
-    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/illusion_yoke_lace_sheath_dress_1_270x341_crop_top.jpg?v=1553073332);
-    transition: 1s;
-}
-.popularThird:hover{
-    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/illusion_yoke_lace_sheath_dress_2_270x341_crop_top.jpg?v=1553073332);
-    transition: 1s;
-}
+
 .popularThird div:first-child{
     display: block;
     position: absolute;
@@ -826,14 +804,7 @@ nav{
     width: 50px;
 }
 
-.popularFourth{
-    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/josefina_boyfriend_jeans_bright_light_broken_twill_1_270x341_crop_top.jpg?v=1553073326);
-    transition: 1s;
-}
-.popularFourth:hover{
-    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/josefina_boyfriend_jeans_bright_light_broken_twill_2_270x341_crop_top.jpg?v=1553073326);
-    transition: 1s;
-}
+
 .popularFourth div:first-child{
     display: block;
     position: absolute;
@@ -1049,6 +1020,23 @@ nav{
     text-align: left;
     color: white;
 }
+
+
+.lastBtn{
+    font-size: 60%;
+    font-weight: 600;
+    border: none;
+    padding: 11px 20px;
+    background-color: #FFF;
+    transition: .3s ease;
+}
+.lastBtn:hover{
+    background-color: black;
+    color: #FFF;
+    transition: .3s ease;
+}
+
+
 
   @media screen and (min-width:992px){
     nav{
