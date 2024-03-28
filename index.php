@@ -16,3 +16,4 @@
 <!-- season sale kısmıda aynı şekilde //?DONE -->
 <!-- bir ürüne bastığında gideceğin sayfayı oluştur o ürünün özel sayfası -->
 <!-- ürünleri karta ekleme olayını yap -->
+<!-- spesifik yönlendirmeleri yap (shoes,clothes...) -->

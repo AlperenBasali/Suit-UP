@@ -51,3 +51,5 @@ swipe.on("swipeleft", (ev) => {
 swipe.on("swiperight", (ev) => {
   prev();
 });
+
+
