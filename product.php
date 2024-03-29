@@ -106,6 +106,56 @@ ol li a:hover{color: #01DAD5;transition: .3s;}
 .bi-heart-fill::before{
     transition: .5s;
 }
+
+.productLinks a{
+    color: #6fcfb8;
+    font-size: 130%;
+    margin-right: 10px;
+    transition: .5s;
+}
+.productLinks a:hover{
+    color: black;
+    transition: .5s;
+}
+@media screen and (max-width:576px){
+.productBigImgBox {
+    height: 400px;
+}
+.listYaxis {
+    height: 400px;
+    position: relative;
+}
+.listYaxis .act {
+    opacity: 1;
+    transform: translateY(100px);
+}
+.listYaxis .next {
+    transform: translateY(250px) scale(.85);
+}
+}
+@media screen and (max-width:576px){
+.productBigImgBox {
+    height: 400px;
+}
+.listYaxis {
+    height: 400px;
+    position: relative;
+}
+.listYaxis .act {
+    opacity: 1;
+    transform: translateY(100px) scale(.50);
+    left: -40px;
+}
+.listYaxis .next {
+    transform: translateY(200px) scale(.50);
+    left: -40px;
+}
+.listYaxis .prev {
+    transform: scale(.50);
+    left: -40px;
+}
+}
+
 </style>
 
 <div aria-label="breadcrumb">
@@ -119,12 +169,12 @@ ol li a:hover{color: #01DAD5;transition: .3s;}
 </div>
 
 <section>
-    <div class="container">
+    <div class="container" style="--bs-gutter-x: 1.5rem; ">
         <div class="row">
-            <div class="col-8 d-flex ">
+            <div class="col-12 col-lg-8 d-flex container-fluid  ">
                 <div class="col-4">
 
-                    <ul class="list listYaxis">
+                    <ul class="list listYaxis p-0 ">
                             <!-- SIRASI KARIŞIYOR DÜZELT -->
                         <li class="act"  style=" background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/classic_fit_three-piece_check_suit_3_170x163_crop_top.jpg?v=1553073344) ; ">1</li>
                         <li class="next" style=" background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/classic_fit_three-piece_check_suit_1_170x163_crop_top.jpg?v=1553073344) ; " >2</li>
@@ -139,12 +189,12 @@ ol li a:hover{color: #01DAD5;transition: .3s;}
                     <div class="productBigImgBox img-fluid" style=" background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/classic_fit_three-piece_check_suit_3_170x163_crop_top.jpg?v=1553073344) ; " ></div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <div class="productInfoBox">
                     <div class="productHeader mb-3">
                         <h1 style="font-size: 90%;word-spacing: 3px;">CLASSIC FIT THREE-PIECE CHECK SUIT</h1>
                     </div>
-                    <div class="productDetails">
+                    <div class="productDetails ">
                         <p>Availability: <span style="color: green;">98 items</span></p>
                         <p>SKU: —</p>
                         <p>Barcode:</p>
@@ -168,6 +218,12 @@ ol li a:hover{color: #01DAD5;transition: .3s;}
                         <a href=""><i class="bi bi-heart-fill text-black"></i><span>Add to the wishlist</span></a>
                         </div>
                     </div>
+                </div>
+                <div class="productLinks d-flex mt-4 ">
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-google"></i></a>
+                    <a href=""><i class="bi bi-pinterest"></i></a>
                 </div>
             </div>
         </div>
